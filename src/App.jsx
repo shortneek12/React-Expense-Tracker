@@ -35,15 +35,11 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "*",
-    element: <Error />,
-  },
 ]);
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <RouterProvider router={router} />
       <ToastContainer/>
     </div>
