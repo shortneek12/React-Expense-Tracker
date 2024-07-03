@@ -10,7 +10,7 @@ const Error = () => {
   return (
     <div className="error">
       <h1>Sorry, an unexpected error has occurred.</h1>
-      <p>{error.message || error.status}</p>
+      <p>{error.message || error.statusText}</p>
       <div className="flex-md">
         <button
           className="btn btn--dark"
