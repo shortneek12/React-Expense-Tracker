@@ -6,10 +6,10 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // Layouts
-import Main, { mainLoader } from "./layouts/Main";
+import Main, { mainLoader } from "./layout/Main";
 
 // Actions
-import { logoutAction } from "./actions/logout";
+import { logoutAction } from "./actions/Logout";
 import { deleteBudget } from "./actions/deleteBudget";
 
 // Routes
