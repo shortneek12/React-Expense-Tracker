@@ -4,7 +4,7 @@ export const waait = () =>
 // colors
 const generateRandomColor = () => {
   const existingBudgetLength = fetchData("budgets")?.length ?? 0;
-  return `${existingBudgetLength * 34} 65% 50%`;
+  return `${existingBudgetLength * 69 % 360} 50% 50%`;
 };
 
 // Local storage
@@ -74,8 +74,14 @@ export const calculateSpentByBudget = (budgetId) => {
 };
 
 // FORMATTING
-export const formatDateToLocaleString = (epoch) =>
-  new Date(epoch).toLocaleDateString();
+export const formatDateToLocaleString = (epoch) => {
+  const options = {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric'
+  };
+  return new Date(epoch).toLocaleDateString(undefined, options);
+};
 
 // Formating percentages
 export const formatPercentage = (amt) => {

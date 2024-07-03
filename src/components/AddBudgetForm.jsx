@@ -25,24 +25,24 @@ const AddBudgetForm = () => {
       <h2 className="h3">Create budget</h2>
       <fetcher.Form method="post" className="grid-sm" ref={formRef}>
         <div className="grid-xs">
-          <label htmlFor="newBudget">Budget Name</label>
+          <label htmlFor="newBudget">Budget Name :</label>
           <input
             type="text"
             name="newBudget"
             id="newBudget"
-            placeholder="e.g., Studies"
+            placeholder="e.g. Studies"
             required
             ref={focusRef}
           />
         </div>
         <div className="grid-xs">
-          <label htmlFor="newBudgetAmount">Amount <small>(₹)</small></label>
+          <label htmlFor="newBudgetAmount">Amount <small>(₹) :</small></label>
           <input
             type="number"
             step="0.01"
             name="newBudgetAmount"
             id="newBudgetAmount"
-            placeholder="e.g., 3000"
+            placeholder="e.g. 3000"
             required
             inputMode="decimal"
           />
